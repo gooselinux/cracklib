@@ -1,0 +1,13 @@
+Newer autopoint chokes if we don't explicitly list a version here.
+diff -up cracklib-2.8.12/configure.in cracklib-2.8.12/configure.in
+--- cracklib-2.8.12/configure.in	2008-10-28 13:27:06.000000000 -0400
++++ cracklib-2.8.12/configure.in	2008-10-28 13:27:07.000000000 -0400
+@@ -58,7 +58,7 @@ AC_CHECK_FUNCS(strdup)
+ AC_CHECK_FUNCS(getpwuid_r)
+ 
+ dnl internationalization macros
+-AM_GNU_GETTEXT_VERSION
++AM_GNU_GETTEXT_VERSION(0.14)
+ AM_GNU_GETTEXT([external])
+ 
+ dnl Control default dictname
